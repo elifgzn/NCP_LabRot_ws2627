@@ -665,11 +665,11 @@ def show_instructions(win, screen_width, screen_height, phase='calibration'):
             f"This task involves moving a white rectangle (\"your phone's screen\") over an object on the screen, and taking its picture by pressing a button. After a short practice, the main experiment consists of {n_blocks} blocks with {TRIALS_PER_MINIBLOCK} trials each.",
             "",
             "In each trial, you will see a black rectangle on the screen.",
-            "You will use the touchpad to move the white rectangle (your \"phone screen\") over the object, to frame it. After you fully frame the rectangle, you need to press SPACE to take a picture. Once you've pressed SPACE, the black rectangle will go away, revealing the object you took a picture of.",
+            "You will use the mouse to move the white rectangle (your \"phone screen\") over the object, to frame it. After you fully frame the rectangle, you need to press SPACE to take a picture. Once you've pressed SPACE, the black rectangle will go away, revealing the object you took a picture of.",
             "",
             "Please keep in mind that in some trials, it will be harder to control the movement of the white frame. This is intended. Accordingly, after each trial, you will be asked to indicate your feeling of control over the movement of the frame (on a scale of 1 to 7, where 1 is no control and 7 is full control). Please answer by using the LEFT and RIGHT arrow keys to move the slider, and press SPACE to confirm.",
             "",
-            "While you use the touchpad to move the white frame, please make continuous movements. Please do not move your finger away from the touchpad, or do small strokes.",
+            "While you use the mouse to move the white frame, please make continuous movements. Please do not lift the mouse, or do small strokes.",
             "",
             "Please feel free to ask any questions to the experimenter now.",
             "",
@@ -719,7 +719,7 @@ def show_calibration_results(win, screen_width, screen_height):
         "Well done - the practice block is now complete!",
         "",
         "You will now start with the main experiment.",
-        "Use the touchpad to move your frame over the black square. Once you've framed the square, press SPACE to take a picture, and reveal the object of which you took a picture.",
+        "Use the mouse to move your frame over the black square. Once you've framed the square, press SPACE to take a picture, and reveal the object of which you took a picture.",
         "After each trial, rate your feeling of control over the frame's movement on a scale of 1 to 7 (1 = no control, 7 = full control) by using the LEFT and RIGHT arrow keys to move the slider, and press SPACE to confirm.",
         "",
         "Please press SPACE to start."
@@ -786,7 +786,7 @@ def run_trial(win, mouse, clock, screen_width, screen_height,
     core.wait(fix_dur)
 
     # ── TRIAL STARTS IMMEDIATELY after fixation ───────────────────────────────
-    # Frame is placed at start_pos; participant moves it with the touchpad.
+    # Frame is placed at start_pos; participant moves it with the mouse.
     # SPACE is only used to SUBMIT once the frame is over the target.
     frame_x = float(start_pos[0])
     frame_y = float(start_pos[1])

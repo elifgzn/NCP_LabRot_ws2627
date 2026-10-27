@@ -28,7 +28,7 @@ This guide walks you through the experiment script [`CARA_B_main_trialwise.py`](
 | `visual.Rect`, `visual.TextStim`, `visual.ImageStim`, `visual.Line` | **Stimulus objects**: rectangles, text, images, lines. You create them once and then draw them. | The black target square, the white frame, the instructions, the object images |
 | `stim.draw()` + `win.flip()` | **How things get on screen.** `draw()` puts a stimulus on a hidden "back buffer". `win.flip()` swaps that buffer onto the screen. Nothing is visible until `flip()` is called. | Used everywhere |
 | `event.waitKeys()` / `event.getKeys()` | Read the keyboard. `waitKeys` **pauses** until a key is pressed. `getKeys` **checks** for presses without pausing (used inside loops). | Waiting for SPACE on instruction screens; checking for SPACE/ESC while the frame moves |
-| `event.Mouse` | Reads the mouse/touchpad position. | Moving the frame |
+| `event.Mouse` | Reads the mouse position. | Moving the frame |
 | `core.wait(s)` | Pause for `s` seconds. | Showing the image for 2 s |
 | `core.Clock` | A stopwatch for timing. | Measuring trial duration |
 | `gui.DlgFromDict` | A small pop-up form. | The participant info dialog at the start |
@@ -54,7 +54,7 @@ This guide walks you through the experiment script [`CARA_B_main_trialwise.py`](
 
 ## 3. The Experiment at a Glance
 
-Participants move a white frame (their "phone screen") with the touchpad onto a black square and press SPACE to "take a photo". The black square then turns into an object image from the THINGS database. The key manipulation is **how much control** participants have over the frame: random noise is mixed into their movements.
+Participants move a white frame (their "phone screen") with the mouse onto a black square and press SPACE to "take a photo". The black square then turns into an object image from the THINGS database. The key manipulation is **how much control** participants have over the frame: random noise is mixed into their movements.
 
 There are **three control conditions**:
 
@@ -123,7 +123,7 @@ All trials in Phases 1 and 2 are run by the same function, [`run_trial()`](CARA_
 | Step | What the participant sees | Duration | Code |
 |---|---|---|---|
 | 1. Fixation | Black fixation cross in the centre | 0.5–0.8 s (random) | [L774–786](CARA_B_main_trialwise.py#L774-L786) |
-| 2. Movement | Black target square (top of screen) + white frame (bottom of screen). The participant moves the frame with the touchpad. | Until SPACE | [L825–1071](CARA_B_main_trialwise.py#L825-L1071) |
+| 2. Movement | Black target square (top of screen) + white frame (bottom of screen). The participant moves the frame with the mouse. | Until SPACE | [L825–1071](CARA_B_main_trialwise.py#L825-L1071) |
 | 3. Shutter | SPACE is **only accepted if the frame fully encloses the square**. The frame briefly "flashes" larger. | 50 ms | [L832–864](CARA_B_main_trialwise.py#L832-L864) |
 | 4. Delay | Black square only | 1 s | [L866–869](CARA_B_main_trialwise.py#L866-L869) |
 | 5. Reveal *(test only)* | The object image replaces the black square | 2 s | [L871–894](CARA_B_main_trialwise.py#L871-L894) |
