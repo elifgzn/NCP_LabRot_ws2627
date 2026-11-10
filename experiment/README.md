@@ -21,3 +21,11 @@ The stimuli were sampled from the THINGS database. If you use these stimuli, ple
 - Hebart, M. N., Dickter, A. H., Kidder, A., Kwok, W. Y., Corriveau, A., Wicklin, C. V., & Baker, C. I. (2019). THINGS: A database of 1,854 object concepts and more than 26,000 naturalistic object images. *PLOS ONE, 14*(10), e0223792. [https://doi.org/10.1371/journal.pone.0223792](https://doi.org/10.1371/journal.pone.0223792)
 - Stoinski, L. M., Perkuhn, J., & Hebart, M. N. (2024). THINGSplus: New norms and metadata for the THINGS database of 1854 object concepts and 26,107 natural object images. *Behavior Research Methods, 56*(3), 1583–1603. [https://doi.org/10.3758/s13428-023-02110-8](https://doi.org/10.3758/s13428-023-02110-8)
 
+## Monitor Specifications
+- Brand: ASUS
+- 24 inch
+- refresh rate: 144 Hz
+- display resolution: 1920 x 1080 px
+- participants seated approx. 60 cm from monitor
+
+

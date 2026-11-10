@@ -23,7 +23,7 @@ This repository contains the experimental code, stimuli, background literature, 
 
 | Path | Description |
 |------|-------------|
-| [`experiment/`](experiment/README.md) | The experimental code and stimuli. See the folder's README for how to run the experiment. |
+| [`experiment/`](experiment/README.md) | The experimental code and stimuli. See the folder's README for how to run the experiment & monitor specifications. |
 | [`papers/`](papers/guide_to_papers.md) | Background literature. See `guide_to_papers.md` for an overview. |
 | `Schedule_LabRotation_BoSCAGroup.docx` | Schedule and timeline for the Lab Rotation (BoSCA Group). |
 | `NCP Lab Rotation Project Evaluation WS_2026-27.docx` | Evaluation criteria for the lab rotation project. |
